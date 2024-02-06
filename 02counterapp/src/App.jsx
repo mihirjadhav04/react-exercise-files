@@ -12,9 +12,21 @@ function App() {
 
   const addValue = () => {
     console.log("clicked",counter);
-    let newcounter = counter + 1
-    setCounter(newcounter) // setCounter takes the new value that needs to be added in the counter vairable. 
+    // let newcounter = counter + 1
+    // setCounter( counter + 1) // setCounter takes the new value that needs to be added in the counter vairable. 
     //naming is not compulsory : setCounter / can be keept mihirCounter, etc.
+    // setCounter( counter + 1) 
+    // setCounter( counter + 1) 
+    // setCounter( counter + 1) 
+    // setCounter( counter + 1)
+
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+
+    
   }
 
   const removeValue = () => {
